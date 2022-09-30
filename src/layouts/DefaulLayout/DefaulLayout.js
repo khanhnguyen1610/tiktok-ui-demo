@@ -1,6 +1,7 @@
+import PropTypes from 'prop-types';
 import React from 'react';
-import Header from '~/components/Layout/components/Header';
-import Sitebar from './Sitebar';
+import Header from '~/layouts/components/Header';
+import Sitebar from '../components/Sitebar';
 import styles from './DefaulLayout.module.scss';
 import className from 'classnames/bind';
 
@@ -18,4 +19,7 @@ function DefaulLayout({ children }) {
   );
 }
 
+DefaulLayout.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 export default DefaulLayout;
